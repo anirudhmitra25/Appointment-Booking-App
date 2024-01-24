@@ -1,0 +1,73 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    position: relative;
+  }
+  
+  main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .blur-box {
+    position: absolute;
+    background-color: greenyellow;
+    top: 20vh;
+    right: 20vw;
+    width: 12vw;
+    height: 10vh;
+    filter: blur(250px);
+    z-index: 1;
+  }
+  
+  .blur-box-2 {
+    position: absolute;
+    background-color: greenyellow;
+    bottom: 20vh;
+    left: 20vw;
+    width: 12vw;
+    height: 10vh;
+    filter: blur(250px);
+    z-index: 0; 
+  }
+
+  .band-container {
+    position: absolute;
+    top: 55vh;
+    right: 0vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: -1;
+  }
+  
+  .band-container > * {
+    margin-bottom: -70px;
+  }
+
+  .band-container-left {
+    position: absolute;
+    bottom: 5vh;
+    left: 0vh;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: -1;
+  }
+  
+  .band-container-left > * {
+    margin-bottom: -35px;
+  }
+
+  
+
+  
