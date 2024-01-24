@@ -1,6 +1,5 @@
 import { takeLatest, put, call } from "redux-saga/effects";
 import {
-  SET_DATE,
   SET_TIMESLOTS,
   fetchTimeslots,
   FETCH_TIMESLOTS,
